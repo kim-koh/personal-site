@@ -1,0 +1,517 @@
+/* MAIN PAGE */
+
+img {
+    display: block;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+    /*
+    * Nav Bar Section
+    */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+    /*
+    *Hero section
+    */
+        #hero {
+            filter: alpha(opacity=20);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(./assets/images/Background\ 2.jpg);
+            background-size: cover;
+        }
+
+        .headshot {
+            border-radius: 100%;
+            border: 2px solid white;
+            padding: 6px;
+        }
+
+        h1 {
+            color: whitesmoke;
+            font-family: 'Bodoni Moda', serif;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 1%;
+            padding: 8px 40px;
+        }
+
+    /*RESUME*/
+    @media (min-width: 1401px){
+        #resume {
+            background-color: #F3E9DD;
+            display: grid;
+            grid-template: 1fr 0.5fr 1fr 1fr 0.5fr / 1fr 1fr 2fr 2fr;
+            margin-top: 2rem;
+        }
+        
+        .wave-background {
+            z-index: 0;
+            grid-area: 1/1/6/5;
+            background-size: cover;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0.1;
+        }
+
+        /*
+        * Education Section
+        */
+            .education-text-box {
+                display: flex;
+                grid-area: 1/1/2/4;
+                background-color: #FFFCF6;
+                margin: 2rem;
+                padding: 1rem;
+                border-radius: 1%;
+                z-index: 2;
+                opacity: 0.9;
+                outline: 2px solid rgba(255, 105, 180, 0.3);
+                outline-offset: -1rem;
+            }
+
+            .education-text-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: left;
+                width: 100%;
+                padding: 1rem; 
+            }
+
+            .subsection-title {
+                font-size: 2rem;
+                font-family: 'Bodoni Moda', serif;
+                font-weight: 900;
+            }
+
+
+            .edu-table {
+                display: grid;
+                grid-template: 1fr / 6fr 3fr 3fr;
+                gap: 1rem;
+            }
+
+            .edu-table div {
+                font-family: 'Noto Sans', sans-serif;
+                font-size: 1.2rem;
+                
+            }
+
+            .grad-img-container {
+                grid-area: 1/4/3/5;
+                z-index: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem;
+            }
+
+            .grad-image {
+                width: 75%;
+                opacity: 0.95;
+            }
+
+            .watercolor-image {
+                grid-area: 2/1/3/4;
+                z-index: 1;
+                object-fit: cover;
+                width:100%;
+                margin: -5rem -1rem -9rem 1rem;
+            }
+
+        /*
+        * Work Experience Section
+        */
+            .experience-container {
+                display: flex;
+                flex-direction: column;
+                background-color: #FFCCD2;
+                z-index: 1;
+                grid-area: 3/3/6/5;
+                margin: 2rem;
+                padding: 2rem;
+                opacity: 0.8;
+                outline:2px solid rgba(0, 0, 0, 0.3);
+                outline-offset: -1rem;
+            }
+
+            .work-list * {
+                font-family: 'Noto Sans', sans-serif;
+            }
+
+            .work-dates {
+                margin-left: 0.5rem;
+            }
+
+            .job-heading {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-bottom: 0.5rem;
+            }
+
+        /*
+        * Skills Section
+        */
+            .skills-container {
+                background-color: rgba(0, 0, 0, 0.65);
+                grid-area: 3/1/5/3;
+                z-index: 1;
+                margin: 2rem;
+                padding: 2rem;
+                outline: 2px solid white;
+                outline-offset: -1rem;
+                border-radius: 1%;
+            }
+
+            .skills-text * {
+                color:whitesmoke;
+                
+            }
+
+            .skills-text div {
+                font-family: 'Noto Sans', sans-serif;
+            }
+    }
+
+    @media (min-width: 768px) and (max-width: 1400px) {
+        #resume {
+            background-color: #F3E9DD;
+            display: grid;
+            grid-template: 1fr 0.5fr 1fr 1fr 0.5fr / 1fr 1fr 2fr 2fr;
+            margin-top: 2rem;
+        }
+        
+        .wave-background {
+            z-index: 0;
+            grid-area: 1/1/6/5;
+            background-size: cover;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0.1;
+        }
+
+        /*
+        * Education Section
+        */
+            .education-text-box {
+                display: flex;
+                grid-area: 1/1/2/4;
+                background-color: #FFFCF6;
+                margin: 2rem;
+                padding: 1rem;
+                border-radius: 1%;
+                z-index: 2;
+                opacity: 0.9;
+                outline: 2px solid rgba(255, 105, 180, 0.3);
+                outline-offset: -1rem;
+            }
+
+            .education-text-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: left;
+                width: 100%;
+                padding: 1rem; 
+            }
+
+            .subsection-title {
+                font-size: 2rem;
+                font-family: 'Bodoni Moda', serif;
+                font-weight: 900;
+            }
+
+
+            .edu-table {
+                display: grid;
+                grid-template: 1fr / 6fr 3fr 3fr;
+                gap: 1rem;
+            }
+
+            .edu-table div {
+                font-family: 'Noto Sans', sans-serif;
+                font-size: 1.2rem;
+                
+            }
+
+            .grad-img-container {
+                grid-area: 1/4/2/5;
+                z-index: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem;
+            }
+
+            .grad-image {
+                width: 75%;
+                opacity: 0.95;
+            }
+
+            .watercolor-image {
+                grid-area: 2/1/3/4;
+                z-index: 1;
+                object-fit: cover;
+                width:100%;
+                margin: -5rem -1rem -9rem 1rem;
+            }
+
+        /*
+        * Work Experience Section
+        */
+            .experience-container {
+                display: flex;
+                flex-direction: column;
+                background-color: #FFCCD2;
+                z-index: 1;
+                grid-area: 2/3/6/5;
+                margin: 2rem;
+                padding: 2rem;
+                opacity: 0.8;
+                outline:2px solid rgba(0, 0, 0, 0.3);
+                outline-offset: -1rem;
+            }
+
+            .work-list * {
+                font-family: 'Noto Sans', sans-serif;
+            }
+
+            .work-dates {
+                margin-left: 0.5rem;
+            }
+
+            .job-heading {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-bottom: 0.5rem;
+            }
+
+        /*
+        * Skills Section
+        */
+            .skills-container {
+                background-color: rgba(0, 0, 0, 0.65);
+                grid-area: 2/1/5/3;
+                z-index: 1;
+                margin: 2rem;
+                padding: 2rem;
+                outline: 2px solid white;
+                outline-offset: -1rem;
+                border-radius: 1%;
+            }
+
+            .skills-text * {
+                color:whitesmoke;
+                
+            }
+
+            .skills-text div {
+                font-family: 'Noto Sans', sans-serif;
+            }
+    }
+    
+
+    @media (max-width: 767px) {
+        #resume {
+            background-color: #F3E9DD;
+            display: grid;
+            grid-template: 0.5fr 0.1fr 1.2fr 2fr/ 1fr 1fr;
+            margin-top: 1rem;
+        }
+        
+        .wave-background {
+            z-index: 0;
+            grid-area: 1/1/5/3;
+            background-size: cover;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0.1;
+        }
+
+        /*
+        * Education Section
+        */
+            .education-text-box {
+                display: flex;
+                grid-area: 1/1/2/3;
+                background-color: #FFFCF6;
+                margin: 1rem;
+                padding: 1rem;
+                border-radius: 1%;
+                z-index: 2;
+                opacity: 0.9;
+                outline: 2px solid rgba(255, 105, 180, 0.3);
+                outline-offset: -1rem;
+            }
+
+            .education-text-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: left;
+                width: 100%;
+                padding: 1rem; 
+            }
+
+            .subsection-title {
+                font-size: 2rem;
+                font-family: 'Bodoni Moda', serif;
+                font-weight: 900;
+            }
+
+
+            .edu-table {
+                display: grid;
+                grid-template: 1fr / 6fr 3fr 3fr;
+                gap: 1rem;
+            }
+
+            .edu-table div {
+                font-family: 'Noto Sans', sans-serif;
+                font-size: 1.2rem;
+                
+            }
+
+            .grad-img-container {
+                grid-area: 3/2/4/3;
+                z-index: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .grad-image {
+                width: 100%;
+                opacity: 0.95;
+            }
+
+            .watercolor-image {
+                grid-area: 2/1/3/3;
+                z-index: 1;
+                object-fit: cover;
+                width:100%;
+                margin: -2rem -1rem -9rem 0.5rem;
+            }
+
+        /*
+        * Work Experience Section
+        */
+            .experience-container {
+                display: flex;
+                flex-direction: column;
+                background-color: #FFCCD2;
+                z-index: 1;
+                grid-area: 4/1/5/3;
+                margin: 1rem;
+                padding: 2rem;
+                opacity: 0.8;
+                outline:2px solid rgba(0, 0, 0, 0.3);
+                outline-offset: -1rem;
+            }
+
+            .work-list * {
+                font-family: 'Noto Sans', sans-serif;
+                color: black;
+            }
+
+            .work-dates {
+                margin-left: 0.5rem;
+            }
+
+            .job-heading {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-bottom: 0.5rem;
+            }
+
+        /*
+        * Skills Section
+        */
+            .skills-container {
+                background-color: rgba(0, 0, 0, 0.65);
+                grid-area: 3/1/4/2;
+                z-index: 1;
+                margin: 1rem;
+                padding: 2rem;
+                outline: 2px solid white;
+                outline-offset: -1rem;
+                border-radius: 1%;
+            }
+
+            .skills-text * {
+                color:whitesmoke;
+                
+            }
+
+            .skills-text div {
+                font-family: 'Noto Sans', sans-serif;
+            }
+    }
+
+    /*
+    * Portfolio Section
+    */
+        #portfolio {
+            margin-top: 0; 
+            background-image: url(./assets/images/b-w-background.gif);
+            color: white;
+        }
+
+        .portfolio-content {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .portfolio-layout {
+            display: grid;
+            grid-template: 1fr 1fr / 1fr 1fr 1fr;
+            gap: 1rem;
+            margin-top:2rem;
+        }
+
+        .portfolio-project {
+            max-width: 20rem;
+        }
+
+        .project-preview {
+            max-width: 100%;
+            opacity: 0.6;
+            transition: 0.3s ease;
+            border-radius: 2%;
+        }
+
+        .project-preview:hover {
+            opacity:1;
+            transition: 0.3s ease;
+        }
+
+        .project-title {
+            font-size: 1.1rem;
+            padding:0;
+            margin: 0.5rem 0.5rem 0rem 0.5rem;
+        }
+
+        .project-description {
+            font-style: italic;
+            padding:0;
+            margin:0rem 0.5rem 0rem 0.5rem;
+            font-size: 0.86rem;
+        }
+
+
+    /*
+    * Contact Section
+    */
+        
